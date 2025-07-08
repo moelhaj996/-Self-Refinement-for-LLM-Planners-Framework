@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-1. Run the notebooks under `/notebooks/` to:
+1. Run the framework:
    - Simulate LLM planning outputs
    - Apply self-checking logic
    - Measure performance improvement
