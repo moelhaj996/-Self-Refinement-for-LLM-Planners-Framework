@@ -1,0 +1,16 @@
+{
+  "generated_at": "2025-07-08T16:37:27.499332",
+  "visualizations": [
+    "refinement_progress.png",
+    "performance_comparison.png",
+    "framework_architecture.png",
+    "quality_heatmap.png"
+  ],
+  "framework_metrics": {
+    "scenarios_tested": 3,
+    "average_iterations": 3.0,
+    "average_improvement": 0.25,
+    "convergence_rate": 1.0
+  },
+  "description": "New visualizations for SRLP Framework performance analysis"
+}

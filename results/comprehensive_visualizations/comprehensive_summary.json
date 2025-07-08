@@ -1,0 +1,26 @@
+{
+  "generated_at": "2025-07-08T16:43:24.773679",
+  "visualizations": [
+    "comprehensive_dashboard.png",
+    "provider_performance_comparison.png",
+    "scenario_provider_heatmap.png",
+    "model_comparison_chart.png",
+    "scenario_comparison.png",
+    "travel_process.png",
+    "travel_comparison.png",
+    "cooking_process.png",
+    "cooking_comparison.png",
+    "project_process.png",
+    "project_comparison.png",
+    "srlp_dashboard.png"
+  ],
+  "total_charts": 12,
+  "framework_metrics": {
+    "scenarios_tested": 12,
+    "providers_evaluated": 4,
+    "average_quality_improvement": 0.28,
+    "overall_success_rate": 0.92,
+    "average_convergence_iterations": 3.2
+  },
+  "description": "Comprehensive visualization suite for SRLP Framework analysis"
+}

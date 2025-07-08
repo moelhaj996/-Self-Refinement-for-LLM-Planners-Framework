@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRLP Framework - New Visualizations</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .visualization-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .viz-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .viz-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .viz-card h3 {
+            margin: 0 0 15px 0;
+            color: #333;
+            font-size: 1.3em;
+            border-bottom: 2px solid #4ECDC4;
+            padding-bottom: 10px;
+        }
+        
+        .viz-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .viz-card p {
+            margin: 15px 0 0 0;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .stats-section {
+            background: linear-gradient(135deg, #45B7D1 0%, #96CEB4 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+        }
+        
+        .timestamp {
+            font-style: italic;
+            color: #999;
+        }
+        
+        @media (max-width: 768px) {
+            .visualization-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 SRLP Framework Visualizations</h1>
+            <p>New Performance Analysis & Architecture Diagrams</p>
+        </div>
+        
+        <div class="content">
+            <div class="visualization-grid">
+                <div class="viz-card">
+                    <h3>📈 Refinement Progress</h3>
+                    <img src="results/new_visualizations/refinement_progress.png" alt="Refinement Progress Chart">
+                    <p>Shows quality score improvement and error reduction across iterations for all scenarios. Demonstrates the framework's ability to iteratively enhance plan quality.</p>
+                </div>
+                
+                <div class="viz-card">
+                    <h3>📊 Performance Comparison</h3>
+                    <img src="results/new_visualizations/performance_comparison.png" alt="Performance Comparison Chart">
+                    <p>Comprehensive comparison of framework performance across different scenarios, showing iterations required, improvement achieved, and convergence rates.</p>
+                </div>
+                
+                <div class="viz-card">
+                    <h3>🏗️ Framework Architecture</h3>
+                    <img src="results/new_visualizations/framework_architecture.png" alt="Framework Architecture Diagram">
+                    <p>Visual representation of the SRLP framework's modular architecture, showing component interactions and the iterative refinement loop.</p>
+                </div>
+                
+                <div class="viz-card">
+                    <h3>🔥 Quality Heatmap</h3>
+                    <img src="results/new_visualizations/quality_heatmap.png" alt="Quality Score Heatmap">
+                    <p>Heatmap visualization showing quality score progression across scenarios and iterations, highlighting consistent improvement patterns.</p>
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <h2>📊 Framework Performance Summary</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Scenarios Tested</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3.0</div>
+                        <div class="stat-label">Avg Iterations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">25%</div>
+                        <div class="stat-label">Avg Improvement</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Convergence Rate</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <p><strong>Self-Refinement for LLM Planners Framework</strong></p>
+                <p class="timestamp">Visualizations generated: <span id="timestamp"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Set current timestamp
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+        
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
