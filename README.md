@@ -39,11 +39,70 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-1. Run the framework:
-   - Simulate LLM planning outputs
-   - Apply self-checking logic
-   - Measure performance improvement
-2. Visual outputs are saved in `/dashboards/`.
+
+### Quick Start with PDF Report
+
+Run the complete evaluation with automatic PDF report generation:
+
+```bash
+python run_with_pdf_report.py
+```
+
+This will:
+1. Execute the comprehensive SRLP framework evaluation
+2. Generate performance visualizations (if dependencies available)
+3. Create a professional PDF report at `./output/srlp_report.pdf`
+
+### Individual Components
+
+Run the comprehensive demo to see the framework in action:
+
+```bash
+python comprehensive_demo.py
+```
+
+For detailed visualizations and analysis:
+
+```bash
+python create_comprehensive_visualizations.py
+```
+
+For PDF report generation only:
+
+```bash
+python test_pdf.py
+```
+
+### Output
+- Visual outputs are saved in `/dashboards/`
+- PDF reports are saved in `/output/`
+
+## PDF Report Features
+
+The SRLP Framework now generates comprehensive PDF reports that include:
+
+📊 **Performance Metrics Table**
+- Detailed comparison across LLM providers
+- Quality scores, response times, and improvement rates
+- Convergence analysis and success rates
+
+📈 **Comprehensive Visualizations**
+- Quality and performance comparison charts
+- Scenario-based analysis heatmaps
+- Provider ranking and trend analysis
+- Convergence and improvement tracking
+
+📋 **Academic Documentation**
+- Executive summary with key findings
+- Structured conclusions and recommendations
+- Professional formatting for thesis submissions
+- Academic-style presentation and layout
+
+🎓 **Benefits for Academic Use**
+- No browser dependencies (unlike HTML dashboards)
+- Direct integration into thesis documents
+- Printable format for academic review
+- Standardized academic presentation style
 
 ## Visual Highlights
 - Radar charts for multi-dimensional comparison
